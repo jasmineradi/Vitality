@@ -4,24 +4,28 @@
 	box-sizing: border-box;
 }
 
+/* Mobile First */
 body {
-	background-color: #85bdd7;
+	background-color: #1C3F60;
 	font-family: "Montserrat", "Raleway", serif;
-	color: #fff;
+	color: #fff;	
 }
 
+/* Header */
 .header-container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
+/* Logo */
 .logo {
 	max-width: 35vh;
 	height: auto;
 	padding: 1em;
 }
 
+/* Navigation */
 nav {
 	width: 100%;
 }
@@ -34,10 +38,6 @@ nav ul {
 	align-items: center;
 }
 
-nav li {
-	
-}
-
 nav a {
 	display: flex;
 	text-decoration: none;
@@ -46,6 +46,7 @@ nav a {
 	align-items: center;
 }
 
+/* Sidebar */
 .sidebar {
 	position: fixed;
 	top: 0;
@@ -53,11 +54,16 @@ nav a {
 	height: 100vh;
 	width: 250px;
 	z-index: 999;
-	background-color: #85bdd7;
+	background-color: #1C3F60;
 	display: none;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
+	font-family: "Montserrat", "Raleway", serif;
+}
+
+.sidebar {
+	width: 100%;
 }
 
 .sidebar li {
@@ -70,42 +76,304 @@ nav a {
 	color: #fff;
 }
 
-.menu-button {
+.sidebar-bookingbtn {
+	display: inline-block;
+	color: #1C3F60;
+	background-color: #fff;
+	padding: 0.5em;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-left: 2rem;
+	margin-top: 2rem;
+	font-family: "Montserrat", "Raleway", serif;
+	font-size: 16px;
+}
+
+.sidebar-bookingbtn a {
+	color: #000;
+	text-decoration: none;
+}
+
+.hideOnMobile{
 	display: none;
+}
+
+.nav-bookingbtn {
+	display: none;
+}
+
+/* Hamburger Menu Button */
+.menu-button {
+	display: inline-block;
 	color:#fff;
+	margin-right: 10%;
 }
 
-@media (max-width: 800px) {
-	.hideOnMobile{
-		display: none;
-	}
-
-	.menu-button {
-		display: inline-block;
-		margin-right: 10%;
-	}
-}
-
-@media (max-width: 428px) {
-.sidebar {
-		width: 100%;
-	}
-}
-
-main {
+/* Hero Section */
+.hero {
 	display: block;
 }
 
 .hero-img {
 	width: 100%;
+	height: auto;
+	padding: 1em;
 }
 
-main section {
-	margin: 1.5rem;
+/* Footer */
+.columns {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1rem;
+	padding: 1em;
+}
+
+.column-1, .column-3 {
+	display: none;
+}
+
+.column-2 {
+	text-align: center;
+	padding: 2em 0 0 0;
+}
+
+.footer-logo {
+	width: 70%;
+	height: auto;
+}
+
+.vagaro-img {
+	width: 10%;
+	height: auto;
+}
+
+/* *******************************Media Query for Tablet******************************* */
+
+@media (min-width: 550px) {
+	/* navigation */
+	.hideOnMobile{
+		display: none;
+	}
+
+	.nav-bookingbtn {
+		display: inline-block;
+		color: #fff;
+		background-color: #1C3F60;
+		padding: 0.75em;
+		border: 1px solid #fff;
+		cursor: pointer;
+		text-decoration: none;
+		margin-right: 2rem;
+		font-family: "Montserrat", "Raleway", serif;
+	}
+
+	.sidebar-bookingbtn {
+		display: inline-block;
+	}
+
+	.sidebar-bookingbtn {
+		background-color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 5px solid white;
+		text-decoration: none;
+		font-family: "Montserrat", "Raleway", serif;
+	}
+
+	.menu-button {
+		display: inline-block;
+		margin-right: 4%;
+	}
+
+/* Footer */
+
+/* Show Hours and Navigation in Footer on Tablet and Up */
+.column-1, .column-3 {
+	display: block;
+}
+
+.columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	padding: 1em;
+}
+
+.column-1 {
+	text-align: left;
+	padding:  2em 0 0 2em;
+}
+
+.column-2 {
+	text-align: center;
+	padding: 2em 0 0 0;
+}
+
+.footer-logo {
+	width: 100%;
+	height: auto;
+	padding: 1em 0 0 0;
+}
+
+.column-3 {
+	color: #fff;
 	text-align: center;
 }
 
-
-
-footer {
+.column-3 {
+	text-align: right;
+	padding: 2em 2em 0 0;
 }
+
+.column-3 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.column-3 li {
+	list-style-type: none;
+}
+
+.column-1, .column-3 {
+	font-size: 12px;
+}
+
+.copyright {
+	text-align: center;
+	padding: 1em 0 0 0;
+	font-size: 13.5px;
+	color: #fff;
+}
+
+}
+
+/* *******************************Media Query for Desktop******************************* */
+@media (min-width: 1000px) {
+	body {
+		background-color: #1C3F60;
+		font-family: "Montserrat", "Raleway", serif;
+		color: #fff;	
+	}
+	
+	/* Header */
+	.header-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	
+	/* Logo */
+	.logo {
+		max-width: 35vh;
+		height: auto;
+		padding: 1em;
+	}
+
+	/* Hide on Mobile, Show on Desktop */
+	.hideOnMobile{
+		display: inline-block;
+	}
+	
+	/* Navigation */
+	nav {
+		width: 100%;
+		padding-right: 3%;
+		font-size: 14px;
+	}
+	
+	nav ul {
+		width: 100%;
+		list-style: none;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+	}
+	
+	nav a {
+		display: flex;
+		text-decoration: none;
+		color: #fff;
+		padding: 0 1rem;
+		align-items: center;
+	}
+	
+	.nav-bookingbtn {
+		display: none;
+	}
+
+	#booknowstyle {
+		border: 1px solid #fff;
+		padding: 0.25em 0;
+		margin: 0.25em 0;
+	}
+
+	/* Sidebar */
+	.sidebar {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 250px;
+		z-index: 999;
+		background-color: #1C3F60;
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	
+	.sidebar {
+		width: 100%;
+	}
+	
+	.sidebar li {
+		width: 100%;
+		padding: 1rem 1rem;
+	}
+	
+	.sidebar a {
+		width: 100%;
+		color: #fff;
+	}
+	
+	/* Hamburger Menu*/
+	.menu-button {
+		display: none;
+		color:#fff;
+	}
+	
+	/* Hero Section */
+	.hero {
+		display: block;
+	}
+	
+	.hero-img {
+		width: 100%;
+		height: auto;
+		padding: 1em;
+	}
+
+	/* Footer */
+
+	.column-1, .column-3 {
+		font-size: 14px;
+	}
+
+	.footer-logo {
+		width: 70%;
+		height: auto;
+	}
+
+	.vagaro-img {
+		width: 10%;
+		height: auto;
+	}
+
+}
+
+	/* *******************************Media Query for Large Desktop******************************* */
+	@media (min-width: 1920px) {
+		#container {
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
