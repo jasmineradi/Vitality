@@ -11,6 +11,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -27,21 +28,11 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="services.html">Services</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<button class="sidebar-bookingbtn">
-						<a href="https://www.vagaro.com/us04/vitalitymassagestudio" target="_blank">
-						Book Now
-						</a>
-					</button>
+					<li><a href="https://www.vagaro.com/vitalitymassagestudio">Book Now</a></li>
 				</ul>
 				<!-- end of sidebar -->
-
-				<ul>
-					<!-- This is the booking button for the left side of hamburger menu-->
-					<a href="https://www.vagaro.com/us04/vitalitymassagestudio" target="_blank">
-					<button class="nav-bookingbtn">Book Now</button>
-					</a>
-					<!-- This is the booking button for the left side of the hamburger menu-->
-					 
+				
+				<ul>			 
 					<li class="hideOnMobile"><a href="index.html">Home</a></li>
 					<li class="hideOnMobile"><a href="about.html">About</a></li>
 					<li class="hideOnMobile"><a href="services.html">Services</a></li>
@@ -55,9 +46,60 @@
 		</div>
 	
 		<main>
-			<section class="hero">
-				<img src="images/hero-img.png" class="hero-img" alt="Andrew Radi, Vitality Massage Studio Owner Performing Massage Therapy Services">
-			</section>
+			<div class="hero">
+				<img src="images/contact-hero.png" class="hero-img" alt="Andrew Radi, standing at front desk at Vitality Massage Studio">
+			</div>
+
+			<div class="contact-grid">
+				<div class="contact-grid1">
+					<h4>We are online based for appointment scheduling.</h4>
+					<p>At our massage therapy clinic, we require all appointments to be booked online. 
+						This is a convenient and efficient way to book your appointment and ensures that our therapists are able to focus on providing quality massage therapy services. 
+						We provide an easy-to-use online booking system that allows you to select the type of appointment and time that works best for you. 
+						Once you have booked your appointment, you will receive an email and text confirming your appointment time. 
+						We look forward to seeing you.
+					</p>
+					
+				</div>
+
+				<div class="contact-grid2">
+					<h4>We are located at 3301 13th avenue south fargo nd 58103.<h4>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2728.0649133687402!2d-96.83574472373301!3d46.86209493909227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c8cbce1128fdc5%3A0xbbbb72c5ca1b5454!2sVitality%20Massage%20Studio!5e0!3m2!1sen!2sus!4v1742181743616!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>	
+			</div>
+
+			<div class="contact-detls">
+				<div class="contact-detls-grid1">
+					<p class="generic-text">Get Booked on Vagaro</p>
+					<a href="https://www.vagaro.com/vitalitymassagestudio" target="_blank"><img src="images/bookings.png" class="vagaro-img2" alt="vagaro booking page"></a>
+				
+					</div>
+
+				<div class="contact-detls-grid2">
+					<p class="generic-text">Give us a Call</p>
+					<a href="tel:+17017294924"><img src="images/phone.png" class="vagaro-img2" alt="vagaro booking page"></a>
+				</div>
+
+				<div class="contact-detls-grid3">
+					<p class="generic-text">Send us an Email</p>
+					<a href="mailto:vitalitymassagetherapy@gmail.com" target="_blank"><img src="images/email.png" class="vagaro-img2" alt="vagaro booking page"></a>
+				</div>
+			</div>
+
+			<div class="faq">
+				<h3>Frequently Asked Questions:</h3><br>
+
+				<h4>How do I manage an appointment?</h4>
+					<p>All appointments can be managed or cancelled directly on <a href="https://www.vagaro.com/vitalitymassagestudio" target="_blank">Vagaro</a></p><br>					
+				<h4>How do I cancel an appointment?</h4>
+					<p>Appointments canceled under 24 hours, will require a cancellation fee which can be paid by calling us.</p><br>
+				
+				<h4>How do I purchase a gift card?</h4>
+					<p>All gift card can be purchased through <a href="https://www.vagaro.com/vitalitymassagestudio/gift-certificates" target="_blank">Vagaro.</a> We do not offer physical gift cards.</p><br>
+				
+				<h4>How do I book an appointment?</h4>
+					<p>All appointments must be scheduled through the <a href="https://www.vagaro.com/vitalitymassagestudio" target="_blank">Vagaro</a> website or app.</p>
+			</div>
 		</main>
 	
 		<footer>
@@ -88,19 +130,10 @@
 
 				<p class="copyright">© 2023 Vitality Massage Studio. All rights reserved. Web Design & Code by Jasmine Radi.</p>
 		</footer>
-
-		<script>	
-			function showSidebar() {
-				const sidebar = document.querySelector('.sidebar')
-				sidebar.style.display = 'flex'
-			}
-
-			function hideSidebar() {
-				const sidebar = document.querySelector('.sidebar')
-				sidebar.style.display = 'none'
-			}
-		</script>
 	</div>
+
+<script src="scripts/scripts.js"></script>	
+
 </body>
 
 </html>
