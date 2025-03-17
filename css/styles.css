@@ -112,9 +112,17 @@ nav a {
 
 /* Hero Section */
 
-.hero-img{
+.mbl-hero-index {
+	display: block;
+}
+
+.mbl-hero-hm-img {
 	width: 100%;
 	height: auto;
+}
+
+.desktop-hero{
+	display: none;
 }
 
 .abt-hero-img {
@@ -123,6 +131,39 @@ nav a {
 	padding: 1em;
 }
 
+/* Home Info Main */
+.home-info{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	padding: 2.5em;
+
+}
+
+/* Home Page Booking Button*/
+.bookingbtn-container {
+	display: flex;
+	justify-content: left;
+	padding-left: 2.5em;
+	width: 100%;
+	height: auto;
+}
+
+.bookingbtn{
+	justify-content: left;
+	border: 1px solid #fff;
+	font-family: "Quicksand", "Montserrat", "Raleway", serif;
+	padding: 0.5em;
+
+}
+
+.home-info p{
+	font-family: "Quicksand", "Montserrat", "Raleway", serif;
+}
+
+.home-info li{
+	list-style-type: circle;
+}
 /* Services Page Main */
 
 .services-mobile-hero {
@@ -180,7 +221,7 @@ nav a {
 	display: grid;
 	grid-template-rows: repeat(1, 1fr);
 	gap: 1.5rem;
-	width: min(100%, 80rem);
+	width: min(90%, 80rem);
 	margin: 0 auto;
 }
 
@@ -190,13 +231,13 @@ nav a {
 }
 
 .image-container img {
-	width: 60%;
+	width: 85%;
 	height: auto;
 	margin: 0 auto;
 }
 
 .text-container {
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -309,14 +350,14 @@ a:link {
 }
 
 a:visited {
-	color: grey;
+	color: #fff;
 	text-decoration: none;
 }
 
 /* Footer */
 
 footer {
-	padding-top: 5em;
+	padding-top: 2em;
 }
 
 .columns {
@@ -374,12 +415,18 @@ footer {
 		margin-right: 4%;
 	}
 
+/* Hide Mobile Hero Home Page*/
+.mbl-hero-index {
+	display: none;
+}
+
 /* Show non mobile hero */
-.hero {
+.desktop-hero {
 	display: block;
 }
 
-.hero-img {
+/* Index.html Hero Image on Tablet and Up */
+.desk-hero-img, .hero-img {
 	width: 100%;
 	height: auto;
 	padding: 1em;
@@ -429,10 +476,6 @@ display: none;
 .serviceitems {
 	display: grid;
 	grid-template-columns: auto auto;
-}
-
-.service-container {
-	padding-left: 100px;
 }
 
 /* Contact Us Page */
@@ -610,11 +653,11 @@ display: none;
 	}
 	
 	/* Hero Section */
-	.hero {
+	.desk-hero {
 		display: block;
 	}
 	
-	.hero-img {
+	.desk-hero-img {
 		width: 100%;
 		height: auto;
 	}
