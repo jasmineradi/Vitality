@@ -338,7 +338,9 @@ iframe {
 	display: block;
 	margin: 0 auto;
 	width: 90%;
-	text-align: center;
+	text-align: left;
+	border: 1px solid white;
+	padding: 1em;
 }
 
 a{
@@ -700,8 +702,6 @@ display: none;
 	.contact-grid2 h4 {
 		font-size: 20px;
 	}
-
-
 
 	/* Footer */
 
