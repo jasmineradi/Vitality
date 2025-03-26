@@ -47,6 +47,7 @@ nav a {
 	align-items: center;
 }
 
+
 /* Sidebar */
 .sidebar {
 	position: fixed;
@@ -162,7 +163,7 @@ nav a {
 }
 
 .home-info li{
-	list-style-type: circle;
+	list-style-type: none;
 }
 /* Services Page Main */
 
@@ -394,7 +395,7 @@ footer {
 
 /* *******************************Media Query for Tablet******************************* */
 
-@media (min-width: 550px) {
+@media (min-width: 768px) {
 	/* navigation */
 	.hideOnMobile{
 		display: none;
@@ -721,7 +722,7 @@ display: none;
 }
 
 /* *******************************Media Query for Large Desktop******************************* */
-	@media (min-width: 1920px) {
+	@media (min-width: 1240px) {
 		#container {
 			width: 50%;
 			margin: 0 auto;
